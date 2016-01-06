@@ -1,0 +1,10 @@
+﻿if (textBox1.Text != "" && textBox2.Text != "")
+            {
+                var a = Convert.ToDouble(textBox1.Text);
+                var b = Convert.ToDouble(textBox2.Text);
+                var result = Class1.Function(a, b);
+                if (result.Length == 1)
+                    textBox3.Text = result[0].ToString();
+                else
+                    MessageBox.Show("Error");
+            }
